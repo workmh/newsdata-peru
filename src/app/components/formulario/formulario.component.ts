@@ -10,7 +10,7 @@ export class FormularioComponent implements OnInit {
   @Output() parametrosSeleccionados = new EventEmitter<any>()
 
   categoriaSeleccionada = "top";
-  paisSeleccionado = "us"
+  //paisSeleccionado = "us"
 
   categorias: any[] = [
     {value: "politics", nombre: "Politica"},
@@ -27,34 +27,14 @@ export class FormularioComponent implements OnInit {
 
   ];
 
-  paises: any[] = [
+  //paises: any[] = [
 
-    {value: "us", nombre: "Estados Unidos"},
-    {value: "ca", nombre: "Canada"},
-    {value: "cn", nombre: "China"},
-    {value: "gb", nombre: "Reino Unido"},
-    {value: "it", nombre: "Italia"},
-    {value: "jp", nombre: "Japon"},
+//    {value: "us", nombre: "Estados Unidos"},
 
 
 
 
-    {value: "cl", nombre: "Chile"},
-    {value: "bo", nombre: "Bolivia"},
-    {value: "ar", nombre: "Argentina"},
-    {value: "co", nombre: "Colombia"},
-    {value: "cr", nombre: "Costa Rica"},
-    {value: "br", nombre: "Brasil"},
-    {value: "ru", nombre: "Rusia"},
-    {value: "ua", nombre: "Ucrania"},
-    {value: "de", nombre: "Alemania"},
-    {value: "pe", nombre: "Perú"},
-
-
-
-
-
-  ]
+  //]
 
 
 
@@ -65,7 +45,7 @@ export class FormularioComponent implements OnInit {
 
     const PARAMETROS = {
       categoria: this.categoriaSeleccionada = "top",
-      pais: this.paisSeleccionado = "us",
+//      pais: this.paisSeleccionado = "us",
 
     }
     this.parametrosSeleccionados.emit(PARAMETROS)
@@ -79,7 +59,7 @@ export class FormularioComponent implements OnInit {
 
     const PARAMETROS = {
       categoria: this.categoriaSeleccionada,
-      pais: this.paisSeleccionado
+//      pais: this.paisSeleccionado
     }
 
     this.parametrosSeleccionados.emit(PARAMETROS)
